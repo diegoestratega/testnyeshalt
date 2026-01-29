@@ -1,7 +1,17 @@
 {
-  "last_updated": "2026-01-29 13:57:12 ET",
-  "count": 58,
+  "last_updated": "2026-01-29 14:09:53 ET",
+  "count": 59,
   "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "13:57:48",
+      "Symbol": "GCTK",
+      "Name": "\"GlucoTrack, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "14:02:48"
+    },
     {
       "Halt Date": "2026-01-29",
       "Halt Time": "13:54:20",
@@ -19,8 +29,8 @@
       "Name": "Digital Currency X Technology Inc. Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "14:03:03"
     },
     {
       "Halt Date": "2026-01-29",
