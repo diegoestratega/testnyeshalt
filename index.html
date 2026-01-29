@@ -3,96 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYSE Trading Halts Tracker</title>
-    <!-- Tailwind CSS -->
+    <title>LULD Halts Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- jQuery & DataTables -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     
     <style>
-        .dataTables_wrapper .dataTables_length select { padding-right: 2rem; }
-        table.dataTable tbody tr { background-color: transparent; }
+        /* Custom overrides for a tighter, bolder table */
+        body { background-color: #0f172a; color: #e2e8f0; font-family: monospace; }
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { color: #94a3b8; margin-bottom: 1rem; }
+        .dataTables_wrapper .dataTables_length select, .dataTables_wrapper .dataTables_filter input { color: #fff; background: #1e293b; border: 1px solid #334155; padding: 0.2rem; }
+        
+        table.dataTable { border-collapse: collapse !important; width: 100% !important; }
+        table.dataTable thead th { border-bottom: 1px solid #334155 !important; padding: 8px 4px !important; }
+        table.dataTable tbody td { padding: 4px 4px !important; border-bottom: 1px solid #1e293b; }
+        
+        /* Highlight for active halts (muted yellow) */
+        .halt-active { background-color: rgba(234, 179, 8, 0.15) !important; }
+        .halt-active td { color: #fef08a !important; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen p-6 font-mono">
+<body class="p-4">
 
-    <div class="max-w-7xl mx-auto">
-        <header class="mb-8 flex justify-between items-end border-b border-slate-700 pb-4">
-            <div>
-                <h1 class="text-3xl font-bold text-emerald-400">NYSE Trading Halts</h1>
-                <p class="text-slate-400 text-sm mt-1">Live feed from NYSE.com • Refreshed via GitHub Actions</p>
-            </div>
+    <div class="max-w-4xl mx-auto">
+        <header class="flex justify-between items-center mb-6 border-b border-slate-700 pb-2">
+            <h1 class="text-2xl font-black text-yellow-500 tracking-tighter">LULD<span class="text-slate-500">MONITOR</span></h1>
             <div class="text-right">
-                <span id="lastUpdated" class="text-xs text-slate-500 block">Loading...</span>
-                <span id="recordCount" class="text-xl font-bold text-white">0</span> <span class="text-sm text-slate-400">Active Halts</span>
+                <div id="statusIndicator" class="text-[10px] uppercase font-bold text-slate-500 animate-pulse">Live</div>
+                <div id="lastUpdated" class="text-xs text-slate-400 font-bold">Waiting for data...</div>
             </div>
         </header>
 
-        <div class="bg-slate-800 rounded-lg shadow-xl p-4 overflow-hidden border border-slate-700">
-            <table id="haltsTable" class="w-full text-sm text-left text-slate-300">
-                <thead class="text-xs text-slate-400 uppercase bg-slate-900">
+        <div class="bg-slate-800/50 rounded p-2">
+            <table id="haltsTable" class="w-full text-sm font-bold text-slate-300">
+                <thead class="text-xs uppercase text-slate-500 text-left">
                     <tr>
-                        <th class="px-4 py-3">Symbol</th>
-                        <th class="px-4 py-3">Name</th>
-                        <th class="px-4 py-3">Exchange</th>
-                        <th class="px-4 py-3">Reason</th>
-                        <th class="px-4 py-3">Halt Date</th>
-                        <th class="px-4 py-3">Halt Time</th>
-                        <th class="px-4 py-3">Resume Time</th>
+                        <th class="whitespace-nowrap w-[1%]">Sym</th>
+                        <th class="whitespace-nowrap w-[1%]">Reason</th>
+                        <th class="whitespace-nowrap w-[1%]">Halted</th>
+                        <th class="whitespace-nowrap w-[1%]">Resume</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!-- Data injected here -->
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
     </div>
 
     <script>
         $(document).ready(function() {
-            // Initialize DataTable
+            // 1. Initialize DataTable with strict compact settings
             const table = $('#haltsTable').DataTable({
-                "order": [[ 5, "desc" ]], // Sort by Halt Time desc
-                "pageLength": 25,
-                "language": {
-                    "search": "Filter symbols:",
-                    "lengthMenu": "Show _MENU_",
-                },
-                "dom": '<"flex justify-between items-center mb-4"lf>rtip'
+                "order": [[ 2, "desc" ]], // Sort by Halted time desc
+                "paging": false,          // Show all rows
+                "info": false,            // Hide "Showing 1 of X"
+                "searching": true,        // Keep search
+                "autoWidth": false,       // Disable auto calc for tighter control
+                "language": { "emptyTable": "No LULD pauses found currently." },
+                "dom": 'ft'               // Only show Filter and Table (hide length/pagination)
             });
 
-            // Fetch Data
-            fetch('./data/halts.json')
-                .then(response => {
-                    if (!response.ok) throw new Error("Data file not found (run Action first)");
-                    return response.json();
-                })
-                .then(json => {
-                    // Update Header Stats
-                    document.getElementById('lastUpdated').textContent = `Updated: ${json.last_updated}`;
-                    document.getElementById('recordCount').textContent = json.count;
+            // 2. Data Fetching Logic
+            function loadData() {
+                // Visual indicator that refresh is happening
+                $('#statusIndicator').removeClass('text-slate-500').addClass('text-emerald-400').text('Refreshing...');
 
-                    // Clear and Populate Table
-                    table.clear();
-                    
-                    const rows = json.data.map(item => [
-                        `<span class="font-bold text-emerald-300">${item['Symbol']}</span>`,
-                        item['Name'],
-                        `<span class="px-2 py-1 rounded bg-slate-700 text-xs">${item['Exchange']}</span>`,
-                        `<span class="text-orange-300">${item['Reason']}</span>`,
-                        item['Halt Date'],
-                        item['Halt Time'],
-                        item['NYSE Resume Time'] || '<span class="text-slate-600">-</span>'
-                    ]);
+                fetch('./data/halts.json?nocache=' + new Date().getTime()) // Prevent browser caching
+                    .then(r => r.json())
+                    .then(json => {
+                        // Update Timestamp
+                        document.getElementById('lastUpdated').textContent = json.last_updated;
+                        
+                        // Clear Table
+                        table.clear();
+                        
+                        // Filter & Map Data
+                        const rows = [];
+                        
+                        json.data.forEach(item => {
+                            // FILTER: Only show LULD items
+                            // Note: NYSE LULD codes often contain "LULD" or "Limit Up Limit Down"
+                            const reason = item['Reason'] || "";
+                            if (!reason.toUpperCase().includes("LULD")) return;
 
-                    table.rows.add(rows).draw();
-                })
-                .catch(err => {
-                    console.error(err);
-                    document.getElementById('lastUpdated').innerHTML = `<span class="text-red-500">Error loading data. Is the Action running?</span>`;
-                });
+                            // Check if Resume Time exists to determine highlighting
+                            const resumeTime = item['NYSE Resume Time'];
+                            const isHalted = !resumeTime || resumeTime.trim() === "";
+                            
+                            // Create Row Data
+                            // Using data-sort attributes for proper time sorting if needed later
+                            const rowNode = table.row.add([
+                                `<span class="text-emerald-400">${item['Symbol']}</span>`,
+                                `<span class="text-slate-400 text-xs">${reason}</span>`,
+                                item['Halt Time'],
+                                resumeTime || '<span class="text-slate-600 tracking-widest">--:--:--</span>'
+                            ]).node();
+
+                            // STYLE: Muted yellow background if no resume time
+                            if (isHalted) {
+                                $(rowNode).addClass('halt-active');
+                            }
+                        });
+
+                        table.draw(false); // Draw without resetting pagination
+                        
+                        // Reset indicator
+                        setTimeout(() => {
+                            $('#statusIndicator').removeClass('text-emerald-400').addClass('text-slate-500').text('Live (61s)');
+                        }, 1000);
+                    })
+                    .catch(e => {
+                        console.error("Fetch error:", e);
+                        $('#statusIndicator').text('Error');
+                    });
+            }
+
+            // 3. Initial Load
+            loadData();
+
+            // 4. Auto-refresh every 61 seconds (61000 ms)
+            setInterval(loadData, 61000);
         });
     </script>
 </body>
