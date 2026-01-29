@@ -1,7 +1,17 @@
 {
-  "last_updated": "2026-01-29 14:09:53 ET",
-  "count": 59,
+  "last_updated": "2026-01-29 14:42:26 ET",
+  "count": 60,
   "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "14:15:10",
+      "Symbol": "HTFB",
+      "Name": "Horizon Technology Finance Corporation 4.875% Notes due 2026",
+      "Exchange": "NYSE",
+      "Reason": "News Released",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
     {
       "Halt Date": "2026-01-29",
       "Halt Time": "13:57:48",
