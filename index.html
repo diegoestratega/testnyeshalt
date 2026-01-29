@@ -21,7 +21,7 @@
         table.dataTable thead th { 
             border-bottom: 2px solid #334155 !important; 
             padding: 10px 4px !important; 
-            color: #64748b; /* Slate-500 */
+            color: #64748b; 
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -35,19 +35,21 @@
             font-size: 0.9rem;
         }
 
-        /* HIGHLIGHT: Active Halts (Muted Dark Amber Background) */
+        /* HIGHLIGHT: Active Halts (Deep Indigo Background) */
+        /* Using !important to override DataTables stripe classes */
         table.dataTable tbody tr.halt-active {
-            background-color: #422006 !important; 
+            background-color: #312e81 !important; /* Deep Indigo/Purple */
         }
         table.dataTable tbody tr.halt-active td {
-            background-color: #422006 !important; 
-            color: #fcd34d !important; /* Amber-300 text for active rows */
-            font-weight: 900;
+            background-color: #312e81 !important; 
+            color: #e0e7ff !important; /* Light Indigo text */
+            font-weight: bold;
         }
         
-        /* Override Sym color in active rows to ensure it stays readable/distinct */
+        /* Override Sym color in active rows to keep it distinct (Bright White in active rows) */
         table.dataTable tbody tr.halt-active td span.sym-text {
-            color: #fcd34d !important; 
+            color: #ffffff !important; 
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
         }
     </style>
 </head>
@@ -59,9 +61,9 @@
             <div>
                 <h1 class="text-3xl font-black text-yellow-500 tracking-tighter">LULD<span class="text-slate-600">MONITOR</span></h1>
             </div>
-            <div class="text-right">
-                <div class="text-[10px] text-slate-500 uppercase tracking-widest mb-1">Last Checked</div>
-                <div id="localTime" class="text-xl font-bold text-white font-mono bg-slate-800 px-3 py-1 rounded">--:--:--</div>
+            <div class="text-right flex items-center gap-2 text-slate-500">
+                <div class="text-[10px] uppercase tracking-widest">Last Checked:</div>
+                <div id="localTime" class="text-[10px] font-bold text-slate-300 font-mono">--:--:--</div>
             </div>
         </header>
 
@@ -84,7 +86,7 @@
         $(document).ready(function() {
             // 1. Initialize DataTable
             const table = $('#haltsTable').DataTable({
-                "order": [[ 1, "desc" ]], // Sort by Halted time desc (Column index 1 now)
+                "order": [[ 1, "desc" ]], // Sort by Halted time desc
                 "paging": false,
                 "info": false,
                 "searching": true, 
@@ -107,7 +109,7 @@
                         table.clear();
                         
                         json.data.forEach(item => {
-                            // FILTER: Only LULD (Hidden logic)
+                            // FILTER: Only LULD
                             const reason = item['Reason'] || "";
                             if (!reason.toUpperCase().includes("LULD")) return;
 
@@ -115,11 +117,11 @@
                             const resumeTime = item['NYSE Resume Time'];
                             const isHalted = !resumeTime || resumeTime.trim() === "";
                             
-                            // Add Row (Reason column removed)
+                            // Add Row
                             const rowNode = table.row.add([
                                 `<span class="sym-text text-cyan-400 text-base pl-2">${item['Symbol']}</span>`,
                                 `<span class="tracking-wide">${item['Halt Time']}</span>`,
-                                resumeTime ? `<span class="tracking-wide">${resumeTime}</span>` : '<span class="text-slate-700 tracking-widest">--:--:--</span>'
+                                resumeTime ? `<span class="tracking-wide">${resumeTime}</span>` : '<span class="text-slate-600 tracking-widest">--:--:--</span>'
                             ]).node();
 
                             // HIGHLIGHT LOGIC
