@@ -1,0 +1,536 @@
+{
+  "last_updated": "2026-01-29 12:13:34 ET",
+  "count": 53,
+  "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "11:08:48",
+      "Symbol": "ESBG",
+      "Name": "\"First Trust Enhanced Stocks, Bonds & Gold ETF\"",
+      "Exchange": "NYSE Arca",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "11:13:48"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "11:07:26",
+      "Symbol": "DRCT",
+      "Name": "\"Direct Digital Holdings, Inc. Class A Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "11:17:26"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "11:05:46",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "12:13:21"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "11:00:31",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "11:05:31"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:55:14",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "11:00:14"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:50:50",
+      "Symbol": "TNUK",
+      "Name": "Tortoise Nuclear Renaissance ETF",
+      "Exchange": "NYSE Arca",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:55:50"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:48:29",
+      "Symbol": "MSGY",
+      "Name": "Masonglory Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:53:29"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:47:35",
+      "Symbol": "VTIX",
+      "Name": "Virtuix Holdings Inc. Class A Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:52:35"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:45:56",
+      "Symbol": "MSTK",
+      "Name": "Tuttle Capital MSTR 0DTE Covered Call ETF",
+      "Exchange": "Cboe BZX",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:50:56"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:44:57",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:54:57"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:36:13",
+      "Symbol": "VSLU",
+      "Name": "Applied Finance Valuation Large Cap ETF",
+      "Exchange": "NYSE Arca",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:46:13"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:34:40",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:44:40"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:28:12",
+      "Symbol": "SQFTP",
+      "Name": "\"Presidio Property Trust, Inc. 9.375% Series D Cumulative Redeemable Perpetual Preferred Stock, $0.01 par value per share\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:33:12"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:19:57",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:33:36"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:09:39",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:19:39"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:07:37",
+      "Symbol": "DRCT",
+      "Name": "\"Direct Digital Holdings, Inc. Class A Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:22:38"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:05:49",
+      "Symbol": "LUD",
+      "Name": "Luda Technology Group Limited",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:15:49"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:04:18",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:09:18"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:03:56",
+      "Symbol": "IDVZ",
+      "Name": "The Opal International Dividend Income ETF",
+      "Exchange": "Cboe BZX",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:08:56"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:02:14",
+      "Symbol": "GOAI",
+      "Name": "Eva Live Inc. Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:07:14"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "10:01:40",
+      "Symbol": "TIRX",
+      "Name": "TIAN RUIXIANG Holdings Ltd Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:06:40"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:58:54",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:03:54"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:51:18",
+      "Symbol": "TIRX",
+      "Name": "TIAN RUIXIANG Holdings Ltd Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "10:01:19"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:48:51",
+      "Symbol": "PHGE",
+      "Name": "BiomX Inc.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:53:51"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:42:30",
+      "Symbol": "GCTK",
+      "Name": "\"GlucoTrack, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:47:30"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:40:30",
+      "Symbol": "PHGE",
+      "Name": "BiomX Inc.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:45:30"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:34:40",
+      "Symbol": "ZSTK",
+      "Name": "ZeroStack Corp. Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:39:40"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:30:15",
+      "Symbol": "CMDT",
+      "Name": "PIMCO Commodity Strategy Active Exchange-Traded Fund",
+      "Exchange": "NYSE Arca",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:35:15"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:30:15",
+      "Symbol": "SAPH",
+      "Name": "SAP SE ADRhedged",
+      "Exchange": "NYSE Arca",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:35:15"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:30:15",
+      "Symbol": "MPU",
+      "Name": "Mega Matrix Inc.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:35:15"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "09:16:40",
+      "Symbol": "AAM WS",
+      "Name": "\"AA Mission Acquisition Corp. Warrants, each whole warrant entitles the holder to purchase one Class A ordinary share at a price of $11.50 per share\"",
+      "Exchange": "NYSE",
+      "Reason": "Regulatory Concern",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "08:34:06",
+      "Symbol": "SHCO",
+      "Name": "Soho House & Co Inc.",
+      "Exchange": "NYSE",
+      "Reason": "Merger Effective",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-28",
+      "Halt Time": "19:50:00",
+      "Symbol": "APLT",
+      "Name": "\"Applied Therapeutics, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:05:00"
+    },
+    {
+      "Halt Date": "2026-01-28",
+      "Halt Time": "19:50:00",
+      "Symbol": "BJDX",
+      "Name": "\"Bluejay Diagnostics, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "09:00:00"
+    },
+    {
+      "Halt Date": "2026-01-28",
+      "Halt Time": "18:09:53",
+      "Symbol": "IONR",
+      "Name": "ioneer Ltd American Depositary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-28",
+      "Halt Time": "16:04:23",
+      "Symbol": "LMND WS",
+      "Name": "\"Lemonade, Inc. Warrants to purchase Common Stock\"",
+      "Exchange": "NYSE American",
+      "Reason": "Regulatory Concern",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-15",
+      "Halt Time": "02:55:27",
+      "Symbol": "JMG",
+      "Name": "JM Group Limited",
+      "Exchange": "NYSE American",
+      "Reason": "Regulatory Concern",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-12-04",
+      "Halt Time": "19:50:00",
+      "Symbol": "MAGH",
+      "Name": "Magnitude International Ltd Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-11-14",
+      "Halt Time": "19:50:00",
+      "Symbol": "MAMK",
+      "Name": "MaxsMaking Inc. Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-11-11",
+      "Halt Time": "19:50:00",
+      "Symbol": "MCTA",
+      "Name": "Charming Medical Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-22",
+      "Halt Time": "19:50:00",
+      "Symbol": "LAWR",
+      "Name": "\"Robot Consulting Co., Ltd. ADS\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-16",
+      "Halt Time": "19:50:00",
+      "Symbol": "PC",
+      "Name": "Premium Catering (Holdings) Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-08",
+      "Halt Time": "19:50:00",
+      "Symbol": "NUTR",
+      "Name": "Nusatrip Incorporated Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-08",
+      "Halt Time": "19:50:00",
+      "Symbol": "EMPG",
+      "Name": "Empro Group Inc. Ordinary shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-03",
+      "Halt Time": "19:50:00",
+      "Symbol": "PLTS",
+      "Name": "Platinum Analytics Cayman Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-03",
+      "Halt Time": "19:50:00",
+      "Symbol": "PTNM",
+      "Name": "Pitanium Limited Class A Ordinary shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-03",
+      "Halt Time": "19:50:00",
+      "Symbol": "EFTY",
+      "Name": "\"Etoiles Capital Group Co., Ltd. Class A Ordinary Shares\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-01",
+      "Halt Time": "11:28:10",
+      "Symbol": "UCFIW",
+      "Name": "CN Healthy Food Tech Group Corp. Warrant",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-10-01",
+      "Halt Time": "11:28:10",
+      "Symbol": "UCFI",
+      "Name": "CN Healthy Food Tech Group Corp. Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-09-26",
+      "Halt Time": "19:50:00",
+      "Symbol": "SDM",
+      "Name": "Smart Digital Group Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-09-26",
+      "Halt Time": "19:50:00",
+      "Symbol": "QMMM",
+      "Name": "QMMM Holdings Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-09-12",
+      "Halt Time": "12:24:23",
+      "Symbol": "OST",
+      "Name": "\"Ostin Technology Group Co., Ltd. Class A Ordinary Shares\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2025-05-19",
+      "Halt Time": "00:21:31",
+      "Symbol": "SVA",
+      "Name": "\"Sinovac Biotech, Ltd\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    }
+  ]
+}
