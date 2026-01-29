@@ -14,16 +14,17 @@
         body { background-color: #0f172a; color: #e2e8f0; font-family: monospace; }
         
         /* DataTable Overrides */
-        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { display: none; } /* Hide search/length for cleaner look per request */
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { display: none; }
         table.dataTable { border-collapse: collapse !important; width: 100% !important; border-bottom: none !important;}
         
         /* Headers */
         table.dataTable thead th { 
             border-bottom: 2px solid #334155 !important; 
             padding: 10px 4px !important; 
-            color: #94a3b8;
+            color: #64748b; /* Slate-500 */
             font-size: 0.75rem;
             text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         
         /* Cells */
@@ -31,45 +32,45 @@
             padding: 8px 4px !important; 
             border-bottom: 1px solid #1e293b;
             vertical-align: middle;
+            font-size: 0.9rem;
         }
 
-        /* HIGHLIGHT FIX: Background color for the ROW, default text color */
-        /* Using !important to override DataTables stripe classes */
+        /* HIGHLIGHT: Active Halts (Muted Dark Amber Background) */
         table.dataTable tbody tr.halt-active {
-            background-color: #422006 !important; /* Muted Dark Amber/Yellow Background */
+            background-color: #422006 !important; 
         }
         table.dataTable tbody tr.halt-active td {
-            background-color: #422006 !important; /* Force cells to match row */
-            color: #fcd34d !important; /* Optional: Make text slightly brighter yellow for contrast against dark bg */
+            background-color: #422006 !important; 
+            color: #fcd34d !important; /* Amber-300 text for active rows */
             font-weight: 900;
+        }
+        
+        /* Override Sym color in active rows to ensure it stays readable/distinct */
+        table.dataTable tbody tr.halt-active td span.sym-text {
+            color: #fcd34d !important; 
         }
     </style>
 </head>
 <body class="p-4">
 
     <div class="max-w-4xl mx-auto">
-        <header class="flex justify-between items-end mb-4 border-b border-slate-700 pb-2">
+        <!-- HEADER -->
+        <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
             <div>
-                <h1 class="text-2xl font-black text-yellow-500 tracking-tighter">LULD<span class="text-slate-500">MONITOR</span></h1>
+                <h1 class="text-3xl font-black text-yellow-500 tracking-tighter">LULD<span class="text-slate-600">MONITOR</span></h1>
             </div>
-            <div class="text-right flex flex-col items-end">
-                <!-- Status Indicators -->
-                <div id="statusIndicator" class="text-[10px] uppercase font-bold text-emerald-500 mb-1">Live (61s)</div>
-                <div class="text-[10px] text-slate-400">
-                    <span class="opacity-50">DATA:</span> <span id="dataTime" class="font-bold text-slate-200">Loading...</span>
-                </div>
-                <div class="text-[10px] text-slate-500">
-                    <span class="opacity-50">CHECKED:</span> <span id="localTime">--:--:--</span>
-                </div>
+            <div class="text-right">
+                <div class="text-[10px] text-slate-500 uppercase tracking-widest mb-1">Last Checked</div>
+                <div id="localTime" class="text-xl font-bold text-white font-mono bg-slate-800 px-3 py-1 rounded">--:--:--</div>
             </div>
         </header>
 
-        <div class="bg-slate-800/50 rounded overflow-hidden">
+        <!-- TABLE -->
+        <div class="rounded overflow-hidden">
             <table id="haltsTable" class="w-full text-sm font-bold text-slate-300">
                 <thead>
                     <tr>
-                        <th class="w-[1%] whitespace-nowrap text-left">Sym</th>
-                        <th class="w-[1%] whitespace-nowrap text-left">Reason</th>
+                        <th class="w-[1%] whitespace-nowrap text-left pl-2">Sym</th>
                         <th class="w-[1%] whitespace-nowrap text-left">Halted</th>
                         <th class="w-[1%] whitespace-nowrap text-left">Resume</th>
                     </tr>
@@ -83,10 +84,10 @@
         $(document).ready(function() {
             // 1. Initialize DataTable
             const table = $('#haltsTable').DataTable({
-                "order": [[ 2, "desc" ]], // Sort by Halted time desc
+                "order": [[ 1, "desc" ]], // Sort by Halted time desc (Column index 1 now)
                 "paging": false,
                 "info": false,
-                "searching": true, // Kept enabled but hidden via CSS unless you want to type
+                "searching": true, 
                 "autoWidth": false,
                 "language": { "emptyTable": "No active LULD pauses." },
                 "dom": 't' // Show ONLY table
@@ -94,15 +95,11 @@
 
             // 2. Data Fetching
             function loadData() {
-                $('#statusIndicator').text('Fetching...').addClass('text-yellow-400').removeClass('text-emerald-500');
-                
                 // Add timestamp AND 'no-store' cache directive
                 fetch('./data/halts.json?t=' + Date.now(), { cache: "no-store" }) 
                     .then(r => r.json())
                     .then(json => {
-                        // Update Timestamps
-                        document.getElementById('dataTime').textContent = json.last_updated;
-                        
+                        // Update Check Time
                         const now = new Date();
                         document.getElementById('localTime').textContent = now.toLocaleTimeString();
 
@@ -110,7 +107,7 @@
                         table.clear();
                         
                         json.data.forEach(item => {
-                            // FILTER: Only LULD
+                            // FILTER: Only LULD (Hidden logic)
                             const reason = item['Reason'] || "";
                             if (!reason.toUpperCase().includes("LULD")) return;
 
@@ -118,12 +115,11 @@
                             const resumeTime = item['NYSE Resume Time'];
                             const isHalted = !resumeTime || resumeTime.trim() === "";
                             
-                            // Add Row
+                            // Add Row (Reason column removed)
                             const rowNode = table.row.add([
-                                `<span class="text-white text-base">${item['Symbol']}</span>`,
-                                `<span class="text-slate-500 text-xs font-normal">${reason}</span>`,
-                                item['Halt Time'],
-                                resumeTime || '<span class="text-slate-600 tracking-widest">--:--:--</span>'
+                                `<span class="sym-text text-cyan-400 text-base pl-2">${item['Symbol']}</span>`,
+                                `<span class="tracking-wide">${item['Halt Time']}</span>`,
+                                resumeTime ? `<span class="tracking-wide">${resumeTime}</span>` : '<span class="text-slate-700 tracking-widest">--:--:--</span>'
                             ]).node();
 
                             // HIGHLIGHT LOGIC
@@ -133,15 +129,10 @@
                         });
 
                         table.draw(false);
-                        
-                        // Reset Status
-                        setTimeout(() => {
-                            $('#statusIndicator').text('Live (61s)').removeClass('text-yellow-400').addClass('text-emerald-500');
-                        }, 500);
                     })
                     .catch(e => {
                         console.error("Fetch error:", e);
-                        $('#statusIndicator').text('Error').addClass('text-red-500');
+                        document.getElementById('localTime').innerHTML = "<span class='text-red-500'>ERROR</span>";
                     });
             }
 
