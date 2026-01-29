@@ -1,7 +1,47 @@
 {
-  "last_updated": "2026-01-29 14:42:26 ET",
-  "count": 60,
+  "last_updated": "2026-01-29 14:59:46 ET",
+  "count": 64,
   "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "14:57:32",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "14:57:31",
+      "Symbol": "RPGL",
+      "Name": "Republic Power Group Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "14:51:13",
+      "Symbol": "NNNN",
+      "Name": "Anbio Biotechnology Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "14:49:47",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "14:54:47"
+    },
     {
       "Halt Date": "2026-01-29",
       "Halt Time": "14:15:10",
@@ -29,8 +69,8 @@
       "Name": "TechCreate Group Ltd.",
       "Exchange": "NYSE American",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "14:49:23"
     },
     {
       "Halt Date": "2026-01-29",
