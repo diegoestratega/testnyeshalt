@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LULD REALTIME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    
+    <style>
+        body { background-color: #020617; color: #f8fafc; font-family: ui-monospace, monospace; }
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { display: none; }
+        table.dataTable { border-collapse: collapse !important; width: 100% !important; border: none !important; }
+        table.dataTable thead th { border-bottom: 1px solid #1e293b !important; color: #475569; font-size: 10px; text-transform: uppercase; padding: 12px 8px !important; }
+        table.dataTable tbody td { padding: 10px 8px !important; border-bottom: 1px solid #0f172a; }
+        
+        /* Highlight: Active Halts (Indigo) */
+        .halt-active { background-color: #312e81 !important; } 
+        .halt-active td { color: #e0e7ff !important; font-weight: bold; }
+        
+        /* Symbol Styling */
+        .sym-text { color: #22d3ee; font-weight: 800; font-size: 1.1rem; }
+        .halt-active .sym-text { color: #ffffff !important; text-shadow: 0 0 10px rgba(255,255,255,0.4); }
+    </style>
+</head>
+<body class="p-4">
+    <div class="max-w-3xl mx-auto">
+        <header class="flex justify-between items-center mb-6 border-b border-slate-900 pb-4">
+            <h1 class="text-xl font-black tracking-tighter text-slate-400">LULD<span class="text-cyan-500">LIVE</span></h1>
+            <div class="text-right">
+                <div class="text-[9px] uppercase tracking-widest text-slate-600 font-bold mb-1">Direct Feed</div>
+                <div id="status" class="text-[10px] font-bold text-slate-500">CONNECTING...</div>
+            </div>
+        </header>
+
+        <table id="haltsTable" class="w-full">
+            <thead>
+                <tr>
+                    <th class="text-left w-20">Sym</th>
+                    <th class="text-left w-24">Halted</th>
+                    <th class="text-left">Resume</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        // ******************************************************
+        // PASTE YOUR NETLIFY URL BELOW!
+        // Example: "https://funny-pudding-123.netlify.app/.netlify/functions/halts";
+        // ******************************************************
+        
+        const API_URL = "https://testnysehalt.netlify.app/.netlify/functions/halts"; 
+
+        // ******************************************************
+
+        $(document).ready(function() {
+            const table = $('#haltsTable').DataTable({
+                "order": [[ 1, "desc" ]], // Sort by Halted Time
+                "paging": false, 
+                "info": false, 
+                "dom": 't'
+            });
+
+            // Parser for the CSV data
+            function parseCSV(text) {
+                const lines = text.split('\n').filter(l => l.trim());
+                if (lines.length < 2) return []; 
+                
+                return lines.slice(1).map(line => {
+                    const matches = line.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+                    if (!matches || matches.length < 6) return null;
+                    const clean = matches.map(m => m.replace(/^"|"$/g, '').trim());
+                    
+                    return {
+                        symbol: clean[2],
+                        reason: clean[5],
+                        haltTime: clean[1],
+                        resumeTime: clean[7] || "" 
+                    };
+                }).filter(x => x !== null);
+            }
+
+            async function refreshFeed() {
+                // Don't refresh if user is looking away (saves money)
+                if (document.hidden) return;
+
+                const statusEl = document.getElementById('status');
+                statusEl.textContent = "SYNCING...";
+                statusEl.className = "text-[10px] font-bold text-yellow-600";
+
+                try {
+                    const response = await fetch(API_URL);
+                    if (!response.ok) throw new Error("Netlify Error");
+                    
+                    const text = await response.text();
+                    const data = parseCSV(text);
+
+                    table.clear();
+
+                    data.forEach(item => {
+                        // FILTER: LULD Only
+                        if (!item.reason.toUpperCase().includes("LULD")) return;
+
+                        const isHalted = !item.resumeTime || item.resumeTime.trim() === "";
+                        
+                        const rowNode = table.row.add([
+                            `<span class="sym-text">${item.symbol}</span>`,
+                            `<span class="text-slate-300">${item.haltTime}</span>`,
+                            isHalted ? '<span class="opacity-20">--:--:--</span>' : `<span class="text-slate-400">${item.resumeTime}</span>`
+                        ]).node();
+
+                        if (isHalted) $(rowNode).addClass('halt-active');
+                    });
+
+                    table.draw(false);
+                    
+                    statusEl.textContent = "LIVE: " + new Date().toLocaleTimeString();
+                    statusEl.className = "text-[10px] font-bold text-emerald-600";
+
+                } catch (e) {
+                    console.error("Feed error:", e);
+                    statusEl.textContent = "CONNECTION FAILED";
+                    statusEl.className = "text-[10px] font-bold text-red-600";
+                }
+            }
+
+            refreshFeed();
+            setInterval(refreshFeed, 60000); // Check every 60s
+            
+            document.addEventListener("visibilitychange", () => {
+                if (!document.hidden) refreshFeed();
+            });
+        });
+    </script>
+</body>
+</html>
