@@ -1,0 +1,35 @@
+name: Scrape NYSE Halts
+
+on:
+  schedule:
+    # Run every 5 minutes from 9am to 5pm EST (approx 14:00 - 22:00 UTC)
+    - cron: '*/5 13-22 * * 1-5'
+  workflow_dispatch: # Allows manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests pytz
+
+      - name: Run Scraper
+        run: python scripts/update_halts.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add data/halts.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update halt data" && git push)
