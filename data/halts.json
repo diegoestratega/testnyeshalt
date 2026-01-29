@@ -1,7 +1,17 @@
 {
-  "last_updated": "2026-01-29 17:38:04 ET",
-  "count": 82,
+  "last_updated": "2026-01-29 17:59:07 ET",
+  "count": 83,
   "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "17:51:24",
+      "Symbol": "AZNH",
+      "Name": "AstraZeneca PLC ADRhedged",
+      "Exchange": "NYSE Arca",
+      "Reason": "Regulatory Concern",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
     {
       "Halt Date": "2026-01-29",
       "Halt Time": "15:52:29",
