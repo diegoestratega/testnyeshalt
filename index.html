@@ -10,39 +10,68 @@
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     
     <style>
-        /* Custom overrides for a tighter, bolder table */
+        /* Base Dark Theme */
         body { background-color: #0f172a; color: #e2e8f0; font-family: monospace; }
-        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { color: #94a3b8; margin-bottom: 1rem; }
-        .dataTables_wrapper .dataTables_length select, .dataTables_wrapper .dataTables_filter input { color: #fff; background: #1e293b; border: 1px solid #334155; padding: 0.2rem; }
         
-        table.dataTable { border-collapse: collapse !important; width: 100% !important; }
-        table.dataTable thead th { border-bottom: 1px solid #334155 !important; padding: 8px 4px !important; }
-        table.dataTable tbody td { padding: 4px 4px !important; border-bottom: 1px solid #1e293b; }
+        /* DataTable Overrides */
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter { display: none; } /* Hide search/length for cleaner look per request */
+        table.dataTable { border-collapse: collapse !important; width: 100% !important; border-bottom: none !important;}
         
-        /* Highlight for active halts (muted yellow) */
-        .halt-active { background-color: rgba(234, 179, 8, 0.15) !important; }
-        .halt-active td { color: #fef08a !important; }
+        /* Headers */
+        table.dataTable thead th { 
+            border-bottom: 2px solid #334155 !important; 
+            padding: 10px 4px !important; 
+            color: #94a3b8;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        /* Cells */
+        table.dataTable tbody td { 
+            padding: 8px 4px !important; 
+            border-bottom: 1px solid #1e293b;
+            vertical-align: middle;
+        }
+
+        /* HIGHLIGHT FIX: Background color for the ROW, default text color */
+        /* Using !important to override DataTables stripe classes */
+        table.dataTable tbody tr.halt-active {
+            background-color: #422006 !important; /* Muted Dark Amber/Yellow Background */
+        }
+        table.dataTable tbody tr.halt-active td {
+            background-color: #422006 !important; /* Force cells to match row */
+            color: #fcd34d !important; /* Optional: Make text slightly brighter yellow for contrast against dark bg */
+            font-weight: 900;
+        }
     </style>
 </head>
 <body class="p-4">
 
     <div class="max-w-4xl mx-auto">
-        <header class="flex justify-between items-center mb-6 border-b border-slate-700 pb-2">
-            <h1 class="text-2xl font-black text-yellow-500 tracking-tighter">LULD<span class="text-slate-500">MONITOR</span></h1>
-            <div class="text-right">
-                <div id="statusIndicator" class="text-[10px] uppercase font-bold text-slate-500 animate-pulse">Live</div>
-                <div id="lastUpdated" class="text-xs text-slate-400 font-bold">Waiting for data...</div>
+        <header class="flex justify-between items-end mb-4 border-b border-slate-700 pb-2">
+            <div>
+                <h1 class="text-2xl font-black text-yellow-500 tracking-tighter">LULD<span class="text-slate-500">MONITOR</span></h1>
+            </div>
+            <div class="text-right flex flex-col items-end">
+                <!-- Status Indicators -->
+                <div id="statusIndicator" class="text-[10px] uppercase font-bold text-emerald-500 mb-1">Live (61s)</div>
+                <div class="text-[10px] text-slate-400">
+                    <span class="opacity-50">DATA:</span> <span id="dataTime" class="font-bold text-slate-200">Loading...</span>
+                </div>
+                <div class="text-[10px] text-slate-500">
+                    <span class="opacity-50">CHECKED:</span> <span id="localTime">--:--:--</span>
+                </div>
             </div>
         </header>
 
-        <div class="bg-slate-800/50 rounded p-2">
+        <div class="bg-slate-800/50 rounded overflow-hidden">
             <table id="haltsTable" class="w-full text-sm font-bold text-slate-300">
-                <thead class="text-xs uppercase text-slate-500 text-left">
+                <thead>
                     <tr>
-                        <th class="whitespace-nowrap w-[1%]">Sym</th>
-                        <th class="whitespace-nowrap w-[1%]">Reason</th>
-                        <th class="whitespace-nowrap w-[1%]">Halted</th>
-                        <th class="whitespace-nowrap w-[1%]">Resume</th>
+                        <th class="w-[1%] whitespace-nowrap text-left">Sym</th>
+                        <th class="w-[1%] whitespace-nowrap text-left">Reason</th>
+                        <th class="w-[1%] whitespace-nowrap text-left">Halted</th>
+                        <th class="w-[1%] whitespace-nowrap text-left">Resume</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -52,77 +81,73 @@
 
     <script>
         $(document).ready(function() {
-            // 1. Initialize DataTable with strict compact settings
+            // 1. Initialize DataTable
             const table = $('#haltsTable').DataTable({
                 "order": [[ 2, "desc" ]], // Sort by Halted time desc
-                "paging": false,          // Show all rows
-                "info": false,            // Hide "Showing 1 of X"
-                "searching": true,        // Keep search
-                "autoWidth": false,       // Disable auto calc for tighter control
-                "language": { "emptyTable": "No LULD pauses found currently." },
-                "dom": 'ft'               // Only show Filter and Table (hide length/pagination)
+                "paging": false,
+                "info": false,
+                "searching": true, // Kept enabled but hidden via CSS unless you want to type
+                "autoWidth": false,
+                "language": { "emptyTable": "No active LULD pauses." },
+                "dom": 't' // Show ONLY table
             });
 
-            // 2. Data Fetching Logic
+            // 2. Data Fetching
             function loadData() {
-                // Visual indicator that refresh is happening
-                $('#statusIndicator').removeClass('text-slate-500').addClass('text-emerald-400').text('Refreshing...');
-
-                fetch('./data/halts.json?nocache=' + new Date().getTime()) // Prevent browser caching
+                $('#statusIndicator').text('Fetching...').addClass('text-yellow-400').removeClass('text-emerald-500');
+                
+                // Add timestamp AND 'no-store' cache directive
+                fetch('./data/halts.json?t=' + Date.now(), { cache: "no-store" }) 
                     .then(r => r.json())
                     .then(json => {
-                        // Update Timestamp
-                        document.getElementById('lastUpdated').textContent = json.last_updated;
+                        // Update Timestamps
+                        document.getElementById('dataTime').textContent = json.last_updated;
                         
-                        // Clear Table
+                        const now = new Date();
+                        document.getElementById('localTime').textContent = now.toLocaleTimeString();
+
+                        // Clear & Repopulate
                         table.clear();
                         
-                        // Filter & Map Data
-                        const rows = [];
-                        
                         json.data.forEach(item => {
-                            // FILTER: Only show LULD items
-                            // Note: NYSE LULD codes often contain "LULD" or "Limit Up Limit Down"
+                            // FILTER: Only LULD
                             const reason = item['Reason'] || "";
                             if (!reason.toUpperCase().includes("LULD")) return;
 
-                            // Check if Resume Time exists to determine highlighting
+                            // Check Halt Status
                             const resumeTime = item['NYSE Resume Time'];
                             const isHalted = !resumeTime || resumeTime.trim() === "";
                             
-                            // Create Row Data
-                            // Using data-sort attributes for proper time sorting if needed later
+                            // Add Row
                             const rowNode = table.row.add([
-                                `<span class="text-emerald-400">${item['Symbol']}</span>`,
-                                `<span class="text-slate-400 text-xs">${reason}</span>`,
+                                `<span class="text-white text-base">${item['Symbol']}</span>`,
+                                `<span class="text-slate-500 text-xs font-normal">${reason}</span>`,
                                 item['Halt Time'],
                                 resumeTime || '<span class="text-slate-600 tracking-widest">--:--:--</span>'
                             ]).node();
 
-                            // STYLE: Muted yellow background if no resume time
+                            // HIGHLIGHT LOGIC
                             if (isHalted) {
                                 $(rowNode).addClass('halt-active');
                             }
                         });
 
-                        table.draw(false); // Draw without resetting pagination
+                        table.draw(false);
                         
-                        // Reset indicator
+                        // Reset Status
                         setTimeout(() => {
-                            $('#statusIndicator').removeClass('text-emerald-400').addClass('text-slate-500').text('Live (61s)');
-                        }, 1000);
+                            $('#statusIndicator').text('Live (61s)').removeClass('text-yellow-400').addClass('text-emerald-500');
+                        }, 500);
                     })
                     .catch(e => {
                         console.error("Fetch error:", e);
-                        $('#statusIndicator').text('Error');
+                        $('#statusIndicator').text('Error').addClass('text-red-500');
                     });
             }
 
-            // 3. Initial Load
+            // 3. Run
             loadData();
-
-            // 4. Auto-refresh every 61 seconds (61000 ms)
-            setInterval(loadData, 61000);
+            setInterval(loadData, 61000); // 61 seconds
         });
     </script>
 </body>
