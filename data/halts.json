@@ -1,10 +1,20 @@
 {
-  "last_updated": "2026-01-29 15:36:31 ET",
-  "count": 76,
+  "last_updated": "2026-01-29 15:57:26 ET",
+  "count": 82,
   "data": [
     {
       "Halt Date": "2026-01-29",
-      "Halt Time": "15:35:23",
+      "Halt Time": "15:52:29",
+      "Symbol": "KXIN",
+      "Name": "Kaixin Holdings Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:51:28",
       "Symbol": "QNCX",
       "Name": "\"Quince Therapeutics, Inc. Common Stock\"",
       "Exchange": "Nasdaq",
@@ -14,7 +24,7 @@
     },
     {
       "Halt Date": "2026-01-29",
-      "Halt Time": "15:32:03",
+      "Halt Time": "15:47:39",
       "Symbol": "TCGL",
       "Name": "TechCreate Group Ltd.",
       "Exchange": "NYSE American",
@@ -24,13 +34,63 @@
     },
     {
       "Halt Date": "2026-01-29",
+      "Halt Time": "15:45:58",
+      "Symbol": "ANL",
+      "Name": "Adlai Nortye Ltd. American Depositary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:44:37",
+      "Symbol": "QNCX",
+      "Name": "\"Quince Therapeutics, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:49:37"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:37:22",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:47:22"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:35:23",
+      "Symbol": "QNCX",
+      "Name": "\"Quince Therapeutics, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:40:23"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:32:03",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:37:03"
+    },
+    {
+      "Halt Date": "2026-01-29",
       "Halt Time": "15:31:03",
       "Symbol": "NNNN",
       "Name": "Anbio Biotechnology Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:41:03"
     },
     {
       "Halt Date": "2026-01-29",
