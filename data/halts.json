@@ -1,10 +1,20 @@
 {
-  "last_updated": "2026-01-29 14:59:46 ET",
-  "count": 64,
+  "last_updated": "2026-01-29 15:36:31 ET",
+  "count": 76,
   "data": [
     {
       "Halt Date": "2026-01-29",
-      "Halt Time": "14:57:32",
+      "Halt Time": "15:35:23",
+      "Symbol": "QNCX",
+      "Name": "\"Quince Therapeutics, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:32:03",
       "Symbol": "TCGL",
       "Name": "TechCreate Group Ltd.",
       "Exchange": "NYSE American",
@@ -14,13 +24,123 @@
     },
     {
       "Halt Date": "2026-01-29",
+      "Halt Time": "15:31:03",
+      "Symbol": "NNNN",
+      "Name": "Anbio Biotechnology Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:20:25",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:30:25"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:19:28",
+      "Symbol": "RPGL",
+      "Name": "Republic Power Group Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:24:28"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:19:27",
+      "Symbol": "NNNN",
+      "Name": "Anbio Biotechnology Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:29:27"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:13:47",
+      "Symbol": "RPGL",
+      "Name": "Republic Power Group Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:18:47"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:13:26",
+      "Symbol": "NNNN",
+      "Name": "Anbio Biotechnology Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:18:26"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:09:51",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:19:51"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:08:10",
+      "Symbol": "RPGL",
+      "Name": "Republic Power Group Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:13:10"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:06:46",
+      "Symbol": "QNCX",
+      "Name": "\"Quince Therapeutics, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:35:00"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "15:03:35",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:08:35"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "14:57:32",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:02:32"
+    },
+    {
+      "Halt Date": "2026-01-29",
       "Halt Time": "14:57:31",
       "Symbol": "RPGL",
       "Name": "Republic Power Group Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:02:31"
     },
     {
       "Halt Date": "2026-01-29",
@@ -29,8 +149,8 @@
       "Name": "Anbio Biotechnology Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "15:06:14"
     },
     {
       "Halt Date": "2026-01-29",
