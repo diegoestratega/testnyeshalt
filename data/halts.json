@@ -1,7 +1,47 @@
 {
-  "last_updated": "2026-01-29 13:29:11 ET",
-  "count": 54,
+  "last_updated": "2026-01-29 13:57:12 ET",
+  "count": 58,
   "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "13:54:20",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "13:53:03",
+      "Symbol": "DCX",
+      "Name": "Digital Currency X Technology Inc. Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "13:43:56",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "13:53:56"
+    },
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "13:32:42",
+      "Symbol": "MSST",
+      "Name": "YieldMax MSTR Performance & Distribution Target 25 ETF",
+      "Exchange": "Cboe BZX",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "13:37:42"
+    },
     {
       "Halt Date": "2026-01-29",
       "Halt Time": "12:13:37",
@@ -9,8 +49,8 @@
       "Name": "TechCreate Group Ltd.",
       "Exchange": "NYSE American",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-29",
+      "NYSE Resume Time": "13:43:41"
     },
     {
       "Halt Date": "2026-01-29",
