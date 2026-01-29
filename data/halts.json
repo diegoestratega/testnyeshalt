@@ -1,7 +1,17 @@
 {
-  "last_updated": "2026-01-29 12:13:34 ET",
-  "count": 53,
+  "last_updated": "2026-01-29 12:53:51 ET",
+  "count": 54,
   "data": [
+    {
+      "Halt Date": "2026-01-29",
+      "Halt Time": "12:13:37",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
     {
       "Halt Date": "2026-01-29",
       "Halt Time": "11:08:48",
