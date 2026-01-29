@@ -36,17 +36,16 @@
         }
 
         /* HIGHLIGHT: Active Halts (Deep Indigo Background) */
-        /* Using !important to override DataTables stripe classes */
         table.dataTable tbody tr.halt-active {
-            background-color: #312e81 !important; /* Deep Indigo/Purple */
+            background-color: #312e81 !important; 
         }
         table.dataTable tbody tr.halt-active td {
             background-color: #312e81 !important; 
-            color: #e0e7ff !important; /* Light Indigo text */
+            color: #e0e7ff !important; 
             font-weight: bold;
         }
         
-        /* Override Sym color in active rows to keep it distinct (Bright White in active rows) */
+        /* Override Sym color in active rows */
         table.dataTable tbody tr.halt-active td span.sym-text {
             color: #ffffff !important; 
             text-shadow: 0 0 10px rgba(255,255,255,0.3);
@@ -86,61 +85,75 @@
         $(document).ready(function() {
             // 1. Initialize DataTable
             const table = $('#haltsTable').DataTable({
-                "order": [[ 1, "desc" ]], // Sort by Halted time desc
+                "order": [[ 1, "desc" ]], // Sort by Halted Time (Column 1)
                 "paging": false,
                 "info": false,
                 "searching": true, 
                 "autoWidth": false,
-                "language": { "emptyTable": "No active LULD pauses." },
-                "dom": 't' // Show ONLY table
+                "language": { "emptyTable": "No active LULD pauses found." },
+                "dom": 't'
             });
 
             // 2. Data Fetching
             function loadData() {
-                // Add timestamp AND 'no-store' cache directive
-                fetch('./data/halts.json?t=' + Date.now(), { cache: "no-store" }) 
-                    .then(r => r.json())
-                    .then(json => {
-                        // Update Check Time
-                        const now = new Date();
-                        document.getElementById('localTime').textContent = now.toLocaleTimeString();
+                // Aggressive Cache Busting
+                const uniqueUrl = './data/halts.json?t=' + new Date().getTime();
+                
+                fetch(uniqueUrl, { 
+                    cache: "no-store", 
+                    headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
+                }) 
+                .then(r => {
+                    if (!r.ok) throw new Error(`HTTP Error: ${r.status}`);
+                    return r.json();
+                })
+                .then(json => {
+                    // Update Time
+                    document.getElementById('localTime').textContent = new Date().toLocaleTimeString();
 
-                        // Clear & Repopulate
-                        table.clear();
+                    // Check if data is fresh
+                    if (!json.data || json.data.length === 0) {
+                        console.warn("Data file is empty.");
+                        return;
+                    }
+
+                    // Clear & Repopulate
+                    table.clear();
+                    
+                    json.data.forEach(item => {
+                        // Filter for LULD (Case Insensitive)
+                        // Uses the CLEANED keys from the Python script
+                        const reason = item['Reason'] || "";
+                        if (!reason.toUpperCase().includes("LULD")) return;
+
+                        // Check Halt Status
+                        const resumeTime = item['NYSE Resume Time'];
+                        const isHalted = !resumeTime || resumeTime.trim() === "";
                         
-                        json.data.forEach(item => {
-                            // FILTER: Only LULD
-                            const reason = item['Reason'] || "";
-                            if (!reason.toUpperCase().includes("LULD")) return;
+                        // Add Row
+                        const rowNode = table.row.add([
+                            `<span class="sym-text text-cyan-400 text-base pl-2">${item['Symbol']}</span>`,
+                            `<span class="tracking-wide">${item['Halt Time']}</span>`,
+                            resumeTime ? `<span class="tracking-wide">${resumeTime}</span>` : '<span class="text-slate-600 tracking-widest">--:--:--</span>'
+                        ]).node();
 
-                            // Check Halt Status
-                            const resumeTime = item['NYSE Resume Time'];
-                            const isHalted = !resumeTime || resumeTime.trim() === "";
-                            
-                            // Add Row
-                            const rowNode = table.row.add([
-                                `<span class="sym-text text-cyan-400 text-base pl-2">${item['Symbol']}</span>`,
-                                `<span class="tracking-wide">${item['Halt Time']}</span>`,
-                                resumeTime ? `<span class="tracking-wide">${resumeTime}</span>` : '<span class="text-slate-600 tracking-widest">--:--:--</span>'
-                            ]).node();
-
-                            // HIGHLIGHT LOGIC
-                            if (isHalted) {
-                                $(rowNode).addClass('halt-active');
-                            }
-                        });
-
-                        table.draw(false);
-                    })
-                    .catch(e => {
-                        console.error("Fetch error:", e);
-                        document.getElementById('localTime').innerHTML = "<span class='text-red-500'>ERROR</span>";
+                        // Highlight Active Halts
+                        if (isHalted) {
+                            $(rowNode).addClass('halt-active');
+                        }
                     });
+
+                    table.draw(false);
+                })
+                .catch(e => {
+                    console.error("Fetch failed:", e);
+                    document.getElementById('localTime').innerHTML = "<span class='text-red-500'>FETCH ERROR</span>";
+                });
             }
 
             // 3. Run
             loadData();
-            setInterval(loadData, 61000); // 61 seconds
+            setInterval(loadData, 61000); // Refresh every 61s
         });
     </script>
 </body>
