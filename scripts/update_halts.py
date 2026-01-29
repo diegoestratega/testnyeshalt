@@ -11,33 +11,49 @@ OUTPUT_FILE = "data/halts.json"
 
 def fetch_halts():
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
     
     try:
-        response = requests.get(CSV_URL, headers=headers, timeout=10)
+        response = requests.get(CSV_URL, headers=headers, timeout=15)
         response.raise_for_status()
         
-        # Parse CSV content
-        decoded_content = response.content.decode('utf-8')
-        cr = csv.DictReader(decoded_content.splitlines())
+        # Parse CSV content with BOM handling
+        decoded_content = response.content.decode('utf-8-sig')
+        lines = decoded_content.splitlines()
         
-        data = list(cr)
+        # Robust CSV Reading
+        reader = csv.DictReader(lines)
         
-        # Add metadata
+        # Normalize headers (strip spaces)
+        if reader.fieldnames:
+            reader.fieldnames = [name.strip() for name in reader.fieldnames]
+
+        clean_data = []
+        for row in reader:
+            clean_row = {}
+            for k, v in row.items():
+                if k: # Only keep valid keys
+                    # Strip whitespace from Key AND Value
+                    clean_row[k.strip()] = v.strip() if v else ""
+            
+            # Save row if it has a Symbol
+            if 'Symbol' in clean_row:
+                clean_data.append(clean_row)
+        
+        # Metadata
         output = {
             "last_updated": datetime.now(pytz.timezone('US/Eastern')).strftime("%Y-%m-%d %H:%M:%S ET"),
-            "count": len(data),
-            "data": data
+            "count": len(clean_data),
+            "data": clean_data
         }
         
-        # Ensure data directory exists
         os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
         
         with open(OUTPUT_FILE, 'w') as f:
             json.dump(output, f, indent=2)
             
-        print(f"Successfully updated {len(data)} halt records.")
+        print(f"Successfully updated {len(clean_data)} halt records.")
         
     except Exception as e:
         print(f"Error fetching data: {e}")
