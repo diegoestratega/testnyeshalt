@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-01-30 12:26:42 ET",
-  "count": 113,
+  "last_updated": "2026-01-30 12:59:04 ET",
+  "count": 123,
   "data": [
     {
       "Halt Date": "2026-01-30",
-      "Halt Time": "12:25:19",
+      "Halt Time": "12:56:27",
       "Symbol": "ELPW",
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
@@ -14,9 +14,9 @@
     },
     {
       "Halt Date": "2026-01-30",
-      "Halt Time": "12:25:18",
-      "Symbol": "SORA",
-      "Name": "AsiaStrategy Ordinary Shares",
+      "Halt Time": "12:56:00",
+      "Symbol": "ILAG",
+      "Name": "Intelligent Living Application Group Inc. Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
       "Resume Date": "",
@@ -24,7 +24,7 @@
     },
     {
       "Halt Date": "2026-01-30",
-      "Halt Time": "12:23:55",
+      "Halt Time": "12:54:07",
       "Symbol": "VHUB",
       "Name": "\"VenHub Global, Inc. Common Stock\"",
       "Exchange": "Nasdaq",
@@ -34,13 +34,113 @@
     },
     {
       "Halt Date": "2026-01-30",
+      "Halt Time": "12:46:07",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:56:08"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:44:42",
+      "Symbol": "ILAG",
+      "Name": "Intelligent Living Application Group Inc. Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:54:43"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:42:27",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:47:27"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:35:44",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:45:44"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:34:32",
+      "Symbol": "VHUB",
+      "Name": "\"VenHub Global, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:44:32"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:33:16",
+      "Symbol": "ILAG",
+      "Name": "Intelligent Living Application Group Inc. Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:43:16"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:29:16",
+      "Symbol": "MLEC",
+      "Name": "Moolec Science SA Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:34:16"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:25:19",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:35:19"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:25:18",
+      "Symbol": "SORA",
+      "Name": "AsiaStrategy Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:38:31"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "12:23:55",
+      "Symbol": "VHUB",
+      "Name": "\"VenHub Global, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:28:55"
+    },
+    {
+      "Halt Date": "2026-01-30",
       "Halt Time": "12:23:25",
       "Symbol": "FATBB",
       "Name": "FAT Brands Inc. Class B Common Stock",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:28:25"
     },
     {
       "Halt Date": "2026-01-30",
@@ -49,8 +149,8 @@
       "Name": "Intelligent Living Application Group Inc. Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "12:32:21"
     },
     {
       "Halt Date": "2026-01-30",
