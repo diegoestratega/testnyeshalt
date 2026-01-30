@@ -1,7 +1,97 @@
 {
-  "last_updated": "2026-01-30 14:21:50 ET",
-  "count": 142,
+  "last_updated": "2026-01-30 14:49:28 ET",
+  "count": 151,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:49:16",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:49:11",
+      "Symbol": "PHOE",
+      "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:48:37",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:46:37",
+      "Symbol": "YI",
+      "Name": "\"111, Inc. American Depositary Shares\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:38:19",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:48:20"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:36:01",
+      "Symbol": "RPGL",
+      "Name": "Republic Power Group Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:41:01"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:28:36",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:33:36"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:24:55",
+      "Symbol": "PHOE",
+      "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:48:46"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:23:01",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:38:02"
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "14:12:45",
@@ -9,8 +99,8 @@
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:22:46"
     },
     {
       "Halt Date": "2026-01-30",
@@ -69,8 +159,8 @@
       "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:24:35"
     },
     {
       "Halt Date": "2026-01-30",
