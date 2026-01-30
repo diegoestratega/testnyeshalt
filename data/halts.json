@@ -1,7 +1,47 @@
 {
-  "last_updated": "2026-01-30 13:48:20 ET",
-  "count": 138,
+  "last_updated": "2026-01-30 14:21:50 ET",
+  "count": 142,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:12:45",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "14:02:27",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:12:27"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "13:55:39",
+      "Symbol": "KXIN",
+      "Name": "Kaixin Holdings Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:00:39"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "13:52:06",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "14:02:06"
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "13:47:54",
@@ -9,8 +49,8 @@
       "Name": "Intelligent Living Application Group Inc. Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "13:52:54"
     },
     {
       "Halt Date": "2026-01-30",
@@ -19,8 +59,8 @@
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "13:51:50"
     },
     {
       "Halt Date": "2026-01-30",
