@@ -1,7 +1,237 @@
 {
-  "last_updated": "2026-01-30 09:23:54 ET",
-  "count": 24,
+  "last_updated": "2026-01-30 10:00:04 ET",
+  "count": 47,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:54:54",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:54:38",
+      "Symbol": "RPGL",
+      "Name": "Republic Power Group Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:59:38"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:53:54",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:49:38",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:54:38"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:49:17",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:54:17"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:46:19",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:45:52",
+      "Symbol": "ANL",
+      "Name": "Adlai Nortye Ltd. American Depositary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:50:52"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:44:19",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:49:19"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:43:15",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:53:15"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:40:14",
+      "Symbol": "PZG",
+      "Name": "Paramount Gold Nevada Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:45:14"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:39:43",
+      "Symbol": "ANL",
+      "Name": "Adlai Nortye Ltd. American Depositary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:44:43"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:38:49",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:43:49"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:38:18",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:43:18"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:34:43",
+      "Symbol": "PZG",
+      "Name": "Paramount Gold Nevada Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:39:43"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:34:36",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:39:36"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:33:56",
+      "Symbol": "PMN",
+      "Name": "ProMIS Neurosciences Inc. Common Shares (ON)",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:38:56"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:33:10",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:38:10"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:32:19",
+      "Symbol": "GOAI",
+      "Name": "Eva Live Inc. Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:37:19"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:31:19",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:36:19"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:30:45",
+      "Symbol": "NMAR",
+      "Name": "Innovator Growth-100 Power Buffer ETF - March",
+      "Exchange": "Cboe BZX",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:35:45"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:30:45",
+      "Symbol": "JUNW",
+      "Name": "AllianzIM U.S. Equity Buffer20 Jun ETF",
+      "Exchange": "Cboe BZX",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:35:45"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:30:18",
+      "Symbol": "CCOM",
+      "Name": "Simplify Chinese Commodities Strategy No K-1 ETF",
+      "Exchange": "NYSE Arca",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "09:35:18"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "09:30:15",
+      "Symbol": "KXIN",
+      "Name": "Kaixin Holdings Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "08:43:02",
