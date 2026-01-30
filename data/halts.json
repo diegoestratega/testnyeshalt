@@ -1,7 +1,127 @@
 {
-  "last_updated": "2026-01-30 10:41:37 ET",
-  "count": 69,
+  "last_updated": "2026-01-30 11:04:47 ET",
+  "count": 81,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:00:08",
+      "Symbol": "VHUB",
+      "Name": "\"VenHub Global, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:57:52",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:57:38",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:02:38"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:53:54",
+      "Symbol": "PLBL",
+      "Name": "Polibeli Group Ltd Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:03:54"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:52:32",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:57:32"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:52:06",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:57:06"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:51:00",
+      "Symbol": "KXIN",
+      "Name": "Kaixin Holdings Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:01:00"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:45:32",
+      "Symbol": "KXIN",
+      "Name": "Kaixin Holdings Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:50:32"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:45:19",
+      "Symbol": "VHUB",
+      "Name": "\"VenHub Global, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:59:50"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:44:47",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:54:47"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:42:59",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:47:59"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:42:17",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:52:17"
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "10:40:22",
@@ -9,8 +129,8 @@
       "Name": "FAT Brands Inc. Class B Common Stock",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:50:22"
     },
     {
       "Halt Date": "2026-01-30",
@@ -19,8 +139,8 @@
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:41:57"
     },
     {
       "Halt Date": "2026-01-30",
@@ -49,8 +169,8 @@
       "Name": "BUUU Group Limited Class A Ordinary Share",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:42:56"
     },
     {
       "Halt Date": "2026-01-30",
@@ -449,8 +569,8 @@
       "Name": "Kaixin Holdings Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:45:16"
     },
     {
       "Halt Date": "2026-01-30",
