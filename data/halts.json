@@ -1,10 +1,130 @@
 {
-  "last_updated": "2026-01-30 11:04:47 ET",
-  "count": 81,
+  "last_updated": "2026-01-30 11:54:50 ET",
+  "count": 102,
   "data": [
     {
       "Halt Date": "2026-01-30",
-      "Halt Time": "11:00:08",
+      "Halt Time": "11:52:19",
+      "Symbol": "APRE",
+      "Name": "\"Aprea Therapeutics, Inc. Common stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:46:42",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:46:11",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:51:11"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:45:24",
+      "Symbol": "SORA",
+      "Name": "AsiaStrategy Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:50:24"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:39:44",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:49:44"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:36:27",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:46:27"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:31:56",
+      "Symbol": "PLAG",
+      "Name": "Planet Green Holdings Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:42:43"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:31:14",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:36:15"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:27:04",
+      "Symbol": "VRM",
+      "Name": "\"Vroom, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:32:04"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:26:39",
+      "Symbol": "PLAG",
+      "Name": "Planet Green Holdings Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:31:39"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:26:09",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:36:10"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:21:22",
+      "Symbol": "PLAG",
+      "Name": "Planet Green Holdings Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:26:22"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:20:45",
       "Symbol": "VHUB",
       "Name": "\"VenHub Global, Inc. Common Stock\"",
       "Exchange": "Nasdaq",
@@ -14,13 +134,103 @@
     },
     {
       "Halt Date": "2026-01-30",
+      "Halt Time": "11:17:27",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:22:27"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:16:01",
+      "Symbol": "PLAG",
+      "Name": "Planet Green Holdings Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:21:01"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:15:49",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:25:49"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:10:44",
+      "Symbol": "PLAG",
+      "Name": "Planet Green Holdings Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:15:44"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:10:27",
+      "Symbol": "VHUB",
+      "Name": "\"VenHub Global, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:20:27"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:09:49",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:14:49"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:05:43",
+      "Symbol": "KXIN",
+      "Name": "Kaixin Holdings Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:15:43"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:05:24",
+      "Symbol": "PLAG",
+      "Name": "Planet Green Holdings Corp.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:10:24"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "11:00:08",
+      "Symbol": "VHUB",
+      "Name": "\"VenHub Global, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:10:09"
+    },
+    {
+      "Halt Date": "2026-01-30",
       "Halt Time": "10:57:52",
       "Symbol": "ELPW",
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "11:07:52"
     },
     {
       "Halt Date": "2026-01-30",
