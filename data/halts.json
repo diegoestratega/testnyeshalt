@@ -1,7 +1,227 @@
 {
-  "last_updated": "2026-01-30 10:00:04 ET",
-  "count": 47,
+  "last_updated": "2026-01-30 10:41:37 ET",
+  "count": 69,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:40:22",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:36:57",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:35:05",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:40:05"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:34:03",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:39:03"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:32:56",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:32:40",
+      "Symbol": "FEED",
+      "Name": "\"ENvue Medical, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:37:40"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:31:32",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:36:32"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:23:39",
+      "Symbol": "FEED",
+      "Name": "\"ENvue Medical, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:28:39"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:23:36",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:33:36"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:22:53",
+      "Symbol": "PHOE",
+      "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:27:53"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:22:40",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:32:41"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:21:13",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:31:14"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:21:11",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:26:11"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:17:14",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:22:14"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:12:46",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:22:46"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:11:40",
+      "Symbol": "BUUU",
+      "Name": "BUUU Group Limited Class A Ordinary Share",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:16:40"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:10:56",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:20:56"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:09:57",
+      "Symbol": "PMN",
+      "Name": "ProMIS Neurosciences Inc. Common Shares (ON)",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:14:57"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:09:29",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:14:29"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:05:30",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:10:30"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:05:10",
+      "Symbol": "FATBB",
+      "Name": "FAT Brands Inc. Class B Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:15:10"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "10:01:50",
+      "Symbol": "GITS",
+      "Name": "\"Global Interactive Technologies, Inc. Common Stock\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:11:50"
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "09:54:54",
@@ -9,8 +229,8 @@
       "Name": "FAT Brands Inc. Class B Common Stock",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:04:54"
     },
     {
       "Halt Date": "2026-01-30",
@@ -29,8 +249,8 @@
       "Name": "TechCreate Group Ltd.",
       "Exchange": "NYSE American",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:03:54"
     },
     {
       "Halt Date": "2026-01-30",
@@ -59,8 +279,8 @@
       "Name": "BUUU Group Limited Class A Ordinary Share",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "10:11:20"
     },
     {
       "Halt Date": "2026-01-30",
