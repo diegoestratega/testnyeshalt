@@ -1,7 +1,167 @@
 {
-  "last_updated": "2026-01-30 15:01:35 ET",
-  "count": 155,
+  "last_updated": "2026-01-30 15:40:17 ET",
+  "count": 171,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:37:08",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:36:14",
+      "Symbol": "TCGL",
+      "Name": "TechCreate Group Ltd.",
+      "Exchange": "NYSE American",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:34:51",
+      "Symbol": "PLBL",
+      "Name": "Polibeli Group Ltd Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:34:26",
+      "Symbol": "YI",
+      "Name": "\"111, Inc. American Depositary Shares\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:32:38",
+      "Symbol": "INLF",
+      "Name": "INLIF LIMITED Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:37:38"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:31:53",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:36:53"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:26:25",
+      "Symbol": "INLF",
+      "Name": "INLIF LIMITED Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:31:25"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:25:30",
+      "Symbol": "PHOE",
+      "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:20:30",
+      "Symbol": "INLF",
+      "Name": "INLIF LIMITED Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:25:30"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:20:06",
+      "Symbol": "PHOE",
+      "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:25:06"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:14:23",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:31:38"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:09:11",
+      "Symbol": "YI",
+      "Name": "\"111, Inc. American Depositary Shares\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:29:12"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:09:10",
+      "Symbol": "INLF",
+      "Name": "INLIF LIMITED Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:19:10"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:04:07",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:14:08"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:03:41",
+      "Symbol": "YI",
+      "Name": "\"111, Inc. American Depositary Shares\"",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:08:41"
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:03:36",
+      "Symbol": "INLF",
+      "Name": "INLIF LIMITED Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:08:36"
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "14:55:23",
@@ -19,8 +179,8 @@
       "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:19:29"
     },
     {
       "Halt Date": "2026-01-30",
@@ -29,8 +189,8 @@
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:03:52"
     },
     {
       "Halt Date": "2026-01-30",
@@ -79,8 +239,8 @@
       "Name": "\"111, Inc. American Depositary Shares\"",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:03:22"
     },
     {
       "Halt Date": "2026-01-30",
