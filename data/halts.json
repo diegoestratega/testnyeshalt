@@ -1,10 +1,30 @@
 {
-  "last_updated": "2026-01-30 15:40:17 ET",
-  "count": 171,
+  "last_updated": "2026-01-30 16:00:37 ET",
+  "count": 174,
   "data": [
     {
       "Halt Date": "2026-01-30",
-      "Halt Time": "15:37:08",
+      "Halt Time": "15:47:23",
+      "Symbol": "INLF",
+      "Name": "INLIF LIMITED Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:42:56",
+      "Symbol": "PHOE",
+      "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "15:42:25",
       "Symbol": "ELPW",
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
@@ -14,13 +34,23 @@
     },
     {
       "Halt Date": "2026-01-30",
+      "Halt Time": "15:37:08",
+      "Symbol": "ELPW",
+      "Name": "Elong Power Holding Limited Class A Ordinary Shares",
+      "Exchange": "Nasdaq",
+      "Reason": "LULD pause",
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:42:08"
+    },
+    {
+      "Halt Date": "2026-01-30",
       "Halt Time": "15:36:14",
       "Symbol": "TCGL",
       "Name": "TechCreate Group Ltd.",
       "Exchange": "NYSE American",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:41:14"
     },
     {
       "Halt Date": "2026-01-30",
@@ -29,8 +59,8 @@
       "Name": "Polibeli Group Ltd Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:39:51"
     },
     {
       "Halt Date": "2026-01-30",
@@ -39,8 +69,8 @@
       "Name": "\"111, Inc. American Depositary Shares\"",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:39:26"
     },
     {
       "Halt Date": "2026-01-30",
@@ -79,8 +109,8 @@
       "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "15:42:28"
     },
     {
       "Halt Date": "2026-01-30",
