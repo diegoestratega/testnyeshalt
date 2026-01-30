@@ -1,7 +1,47 @@
 {
-  "last_updated": "2026-01-30 16:00:37 ET",
-  "count": 174,
+  "last_updated": "2026-01-30 16:35:26 ET",
+  "count": 178,
   "data": [
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "16:25:00",
+      "Symbol": "QETAU",
+      "Name": "Quetta Acquisition Corporation Unit",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "16:25:00",
+      "Symbol": "QETAR",
+      "Name": "Quetta Acquisition Corporation Right",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "16:25:00",
+      "Symbol": "QETA",
+      "Name": "Quetta Acquisition Corporation Common Stock",
+      "Exchange": "Nasdaq",
+      "Reason": "News pending",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
+    {
+      "Halt Date": "2026-01-30",
+      "Halt Time": "16:08:12",
+      "Symbol": "AZNH",
+      "Name": "AstraZeneca PLC ADRhedged",
+      "Exchange": "NYSE Arca",
+      "Reason": "News Released",
+      "Resume Date": "",
+      "NYSE Resume Time": ""
+    },
     {
       "Halt Date": "2026-01-30",
       "Halt Time": "15:47:23",
@@ -9,8 +49,8 @@
       "Name": "INLIF LIMITED Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "16:00:00"
     },
     {
       "Halt Date": "2026-01-30",
@@ -19,8 +59,8 @@
       "Name": "Phoenix Asia Holdings Limited Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "16:00:00"
     },
     {
       "Halt Date": "2026-01-30",
@@ -29,8 +69,8 @@
       "Name": "Elong Power Holding Limited Class A Ordinary Shares",
       "Exchange": "Nasdaq",
       "Reason": "LULD pause",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "2026-01-30",
+      "NYSE Resume Time": "16:00:00"
     },
     {
       "Halt Date": "2026-01-30",
@@ -1549,8 +1589,8 @@
       "Name": "AstraZeneca PLC ADRhedged",
       "Exchange": "NYSE Arca",
       "Reason": "Regulatory Concern",
-      "Resume Date": "",
-      "NYSE Resume Time": ""
+      "Resume Date": "See Subsequent Halt",
+      "NYSE Resume Time": "See Subsequent Halt"
     },
     {
       "Halt Date": "2026-01-29",
